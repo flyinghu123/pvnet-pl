@@ -1,0 +1,13 @@
+# devices: 1
+gpus: [0]
+accelerator: gpu
+max_epochs: 1  # 训练epoch数
+val_check_interval: 1
+# check_val_every_n_epoch: 100
+# limit_train_batches: 0.01  # 使用十分之一数据
+limit_val_batches: 0.01
+profiler: simple # advanced, simple
+# enable_progress_bar: False  # 进度条
+# gradient_clip_val: 0.5
+# num_sanity_val_steps: 0
+# weights_summary:

@@ -1,0 +1,17 @@
+defaults:
+  - optimizers: default
+  - train: default
+  - general: default
+  - trainer: default
+  - data: default
+
+
+exp_name: test
+
+
+hydra:
+  run:
+    dir: outputs/${exp_name}/${now:%Y_%m_%d_%H_%M_%S}
+  sweep:
+    dir: outputs/${exp_name}/
+    subdir: ${now:%Y_%m_%d_%H_%M_%S}
