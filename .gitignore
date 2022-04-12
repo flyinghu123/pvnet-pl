@@ -132,5 +132,3 @@ dmypy.json
 .vscode
 
 outputs
-
-./data
